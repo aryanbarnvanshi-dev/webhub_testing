@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TemplateHub - खोजें और बदलें</title>
+    <!-- सुंदर डिज़ाइन के लिए टेलविंड सीएसएस -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* स्मूथ स्क्रॉलिंग के लिए */
+        body { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col items-center p-6">
+
+    <!-- 1. गूगल जैसा बड़ा सर्च बॉक्स -->
+    <div class="w-full max-w-2xl text-center my-12">
+        <h1 class="text-4xl font-bold mb-6 text-indigo-400">TemplateHub</h1>
+        <div class="relative">
+            <input type="text" id="searchBox" placeholder="टेम्पलेट का नाम या डिस्क्रिप्शन सर्च करें..." 
+                   class="w-full px-6 py-4 bg-gray-800 text-white rounded-full border border-gray-700 focus:outline-none focus:border-indigo-500 shadow-lg text-lg">
+        </div>
+    </div>
+
+    <!-- 2. टेम्पलेट्स के चौकोर डब्बे (Grid Layout) -->
+    <div id="templatesGrid" class="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+        
+        <!-- डब्बा 1 (उदाहरण के लिए) -->
+        <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 shadow-md flex flex-col justify-between p-5 hover:border-indigo-500 transition cursor-pointer">
+            <div>
+                <span class="text-xs text-indigo-400 font-bold">ID: #1</span>
+                <h3 class="text-xl font-bold my-2">SaaS Landing Page</h3>
+                <p class="text-sm text-gray-400 mb-4">यह एक मॉडर्न डार्क थीम वाला SaaS लैंडिंग पेज है जो Tailwind CSS से बना है।</p>
+            </div>
+            <div>
+                <a href="https://github.com/YOUR_MAIN_ID/TemplateHub/tree/main/templates/template1" target="_blank"
+                   class="block text-center w-full bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2 px-4 rounded-lg transition mb-2">
+                   Want to modify? Contribute now
+                </a>
+            </div>
+        </div>
+
+        <!-- डब्बा 2 (उदाहरण के लिए) -->
+        <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 shadow-md flex flex-col justify-between p-5 hover:border-indigo-500 transition cursor-pointer">
+            <div>
+                <span class="text-xs text-indigo-400 font-bold">ID: #2</span>
+                <h3 class="text-xl font-bold my-2">Developer Portfolio</h3>
+                <p class="text-sm text-gray-400 mb-4">डेवलपर्स के लिए अपनी स्किल्स दिखाने के लिए एक बेहतरीन रिस्पॉन्सिव पोर्टफोलियो।</p>
+            </div>
+            <div>
+                <a href="https://github.com/YOUR_MAIN_ID/TemplateHub/tree/main/templates/template2" target="_blank"
+                   class="block text-center w-full bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2 px-4 rounded-lg transition mb-2">
+                   Want to modify? Contribute now
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 3. नया टेम्पलेट जोड़ने का फिक्स्ड बटन (नीचे कोने में) -->
+    <a href="https://github.com/YOUR_MAIN_ID/TemplateHub/new/main/templates" target="_blank"
+       class="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-2xl transition flex items-center gap-2">
+       <span>➕ Add New Template</span>
+    </a>
+
+</body>
+</html>
